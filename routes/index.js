@@ -1,7 +1,7 @@
 exports.index = function(req, res){
-  res.sendfile('index.html');
+	res.send('Hey motherfuckers this is my motherfucking index route!');
 };
 
-exports.about = function(req, res) {
-	res.sendfile('about.html');
-}
+exports.about = function(req, res){
+	res.send('And this is the fucking about route!');
+};
