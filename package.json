@@ -1,14 +1,14 @@
 {
-	"name": "NathanJC",
-	"version": "0.0.1",
-	"private": false,
-	"scripts": {
-		"start": "node app"
-	},
-	"dependencies": {
-		"express": "3.1.0",
-		"jade": "*",
-		"marked": "*",
-		"stylus": "*"
-	}
+  "name": "NathanJC",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.1.1",
+    "jade": "*",
+    "stylus": "*",
+    "marked": "*"
+  }
 }

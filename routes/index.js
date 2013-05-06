@@ -1,7 +1,12 @@
+
+/*
+ * GET home page.
+ */
+
 exports.index = function(req, res){
-	res.send('Hey motherfuckers this is my motherfucking index route!');
+  res.render('index', { title: 'Projects' });
 };
 
 exports.about = function(req, res){
-	res.send('And this is the fucking about route!');
+	res.render('index', { title: 'About NathanJC'});
 };

@@ -2,8 +2,17 @@ doctype 5
 html
   head
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
-    link(rel='shortcut icon', href='/images/bitters.jpg')
+    link(rel='shortcut icon', href='/images/njc_logo.png')
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    
+    .container.main_body
+      .sidebar
+          include sidebar.jade
+      block content
+    .container.navbar
+      ul
+        li 
+          a.nav_link(href='/')= title
+        li
+          a.nav_link(href='http://www.brotherschapman.com/') The Brothers Chapman
