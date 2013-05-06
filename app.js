@@ -11,7 +11,7 @@ var express = require('express')
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 1451);
+app.set('port', process.env.PORT || 8080);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.locals.pretty = true;
@@ -32,5 +32,5 @@ app.get('/', routes.index);
 app.get('/about', routes.about);
 
 http.createServer(app).listen(app.get('port'), function(){
-  console.log('NathanJC is listening on port 1451' + app.get('port'));
+  console.log('NathanJC is listening on port 8080' + app.get('port'));
 });
