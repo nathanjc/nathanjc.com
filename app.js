@@ -29,8 +29,10 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/about', routes.about);
+app.get('/me', routes.me);
+app.get('/feed', routes.feed);
+
 
 http.createServer(app).listen(app.get('port'), function(){
-  console.log('NathanJC is listening on port 8080' + app.get('port'));
+  console.log('NathanJC is listening on port' + app.get('port'));
 });
