@@ -91,36 +91,10 @@ code {
 .profile {
   padding: 1px;
 }
-.navbar {
-  background: #313131;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-.navbar-top {
-  top: 0;
-  border-bottom: 1px solid #272727;
-}
-.navbar-bottom {
-  bottom: 0;
-  border-top: 1px solid #272727;
-}
-.navbar p,
-.navbar li {
-  margin: 0;
-  padding: 0;
-}
-.navbar li {
-  float: left;
-  padding-left: 1em;
-  padding-right: 2em;
+.navbar h3 {
+  display: inline-block;
 }
 .navbar a {
-  text-decoration: none;
-  color: #e0e0e0;
-}
-.navbar a:hover {
-  color: #f5f5f5;
+  color: #222;
+  margin-right: 2em;
 }

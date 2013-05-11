@@ -4,11 +4,10 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'NathanJC' });
+  res.render('index', { title: 'NathanJC | Stream' });
 };
 
-/*
-exports.writing = function(req, res){
-  res.render('writing', { title: 'Aural | NathanJC'});
+
+exports.projects = function(req, res){
+  res.render('projects', { title: 'Projects' });
 };
-*/

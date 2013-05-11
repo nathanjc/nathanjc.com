@@ -3,7 +3,7 @@ html
   head
     title= title
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
-    link(rel='shortcut icon', href='/images/jaredcc1.jpg')
+    link(rel='shortcut icon', href='/images/profile.jpg')
     link(rel='stylesheet', href='/stylesheets/base.css')
     link(rel='stylesheet', href='/stylesheets/skeleton.css')
     link(rel='stylesheet', href='/stylesheets/layout.css')
@@ -12,18 +12,18 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/javascripts/hummingbird.js')
 
-  body
-    script(type='text/javascript') hljs.initHighlightingOnLoad();
-    .container.navbar.navbar-top
-      .twelve.columns.offset-by-two
-        ul
-          li 
-            a(href='/') NATHANJC
-    .container
-      .five.columns.sidebar
-        include sidebar.jade
-      .ten.columns.offset-by-one
-        block content
+body
+  script(type='text/javascript') hljs.initHighlightingOnLoad();
+  .container
+    .five.columns.sidebar 
+      include sidebar.jade
+    .ten.columns.offset-by-one
+      .navbar
+        h3
+          a(href='/') Stream
+        h3
+          a(href='/projects') Projects
+      block content
 
-    script
-      HummingbirdTracker.track();
+  script
+    HummingbirdTracker.track();
