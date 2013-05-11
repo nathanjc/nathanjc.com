@@ -1,3 +1,4 @@
-### The Last Website
+NathanJC.com
+===========
 
-The Last Website is a project I finished building.
+This is my website [nathanjc.com](http://nathanjc.com) built on [Bitters](http://bitters.evbogue.com/).

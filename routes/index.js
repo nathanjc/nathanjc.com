@@ -4,13 +4,11 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Projects' });
+  res.render('index', { title: 'NathanJC' });
 };
 
-exports.me = function(req, res){
-	res.render('me', { title: 'Me'});
+/*
+exports.writing = function(req, res){
+  res.render('writing', { title: 'Aural | NathanJC'});
 };
-
-exports.feed = function(req, res){
-	res.render('feed', { title: 'Feed'});
-};
+*/

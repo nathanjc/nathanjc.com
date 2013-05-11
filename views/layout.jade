@@ -1,22 +1,29 @@
 doctype 5
 html
   head
-    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
-    link(rel='shortcut icon', href='/images/njc_logo.png')
     title= title
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    link(rel='shortcut icon', href='/images/jaredcc1.jpg')
+    link(rel='stylesheet', href='/stylesheets/base.css')
+    link(rel='stylesheet', href='/stylesheets/skeleton.css')
+    link(rel='stylesheet', href='/stylesheets/layout.css')
+    script(type='text/javascript', src='/javascripts/highlight.min.js')
+    link(rel='stylesheet', href='/stylesheets/monokai_sublime.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/hummingbird.js')
+
   body
-    .container.main_body
-      .sidebar
-          include sidebar.jade
-      block content
-    .container.navbar
-      ul
-        li 
-          a.nav_link(href='/')= title
-        li
-          a.nav_link(href='/me') Me
-        li
-          a.nav_link(href='/feed') Feed
-        li
-          a.nav_link(href='http://www.brotherschapman.com/') The Brothers Chapman
+    script(type='text/javascript') hljs.initHighlightingOnLoad();
+    .container.navbar.navbar-top
+      .twelve.columns.offset-by-two
+        ul
+          li 
+            a(href='/') JAREDCC
+    .container
+      .five.columns.sidebar
+        include sidebar.jade
+      .ten.columns.offset-by-one
+        block content
+
+    script
+      HummingbirdTracker.track();
