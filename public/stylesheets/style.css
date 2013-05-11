@@ -91,10 +91,13 @@ code {
 .profile {
   padding: 1px;
 }
-.navbar h3 {
+.navbar h4 {
   display: inline-block;
 }
 .navbar a {
   color: #222;
   margin-right: 2em;
+}
+.project {
+  padding: 22px;
 }

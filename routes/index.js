@@ -4,7 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'NathanJC | Stream' });
+  res.render('index', { title: 'Stream' });
 };
 
 
