@@ -4,7 +4,7 @@ var util = require('util')
 
 httpProxy.createServer({
     router: {
-        'localhost': 'localhost:3000',
+        'localhost': 'localhost:8080',
         'www.nathanjc.com': 'localhost:7777'
     }
 }).listen(80);
