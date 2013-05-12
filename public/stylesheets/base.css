@@ -162,7 +162,7 @@
 	input[type="submit"]:active,
 	input[type="reset"]:active,
 	input[type="button"]:active {
-		border-bottom: 2px solid #f5f5f5;
+		border-bottom: 0.5px solid #cccccc;
 		background: #ccc; /* Old browsers */ }
 
 	.button.full-width,
@@ -196,7 +196,6 @@
 	textarea,
 	select {
 	  	border: 1px solid #bfbfbf;
-	  	box-shadow: 0 1px #bfbfbf;
 	  	color: #7b7b7b;
 		padding: 6px 4px;
 		outline: none;

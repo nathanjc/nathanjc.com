@@ -11,3 +11,7 @@ exports.index = function(req, res){
 exports.projects = function(req, res){
   res.render('projects', { title: 'Projects' });
 };
+
+exports.thelastwebsite = function(req, res){
+	res.render('thelastwebsite', { title: 'The Last Website' });
+}

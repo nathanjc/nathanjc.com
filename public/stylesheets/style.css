@@ -15,7 +15,7 @@ h5 {
 }
 h6 {
   font-family: "Ubuntu Mono Regular";
-  color: #c3c3c3;
+  color: #7e8082;
 }
 p {
   font-size: 1em;
@@ -39,12 +39,31 @@ pre {
 code {
   border-radius: 5px;
 }
-.project,
+.project {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #eee;
+  border: 1px solid #bfbfbf;
+  box-shadow: 0 2.5px #bfbfbf;
+  color: #7b7b7b;
+  display: inline-block;
+  width: 225px;
+  height: 250px;
+  text-decoration: none;
+  margin-top: 25px;
+}
+.projectfull {
+  padding-top: 25px;
+}
+.projectcontentpreview {
+  padding: 10px;
+}
 .buttonlink {
   text-decoration: none;
 }
 .projectimg {
-  max-width: 300px;
+  padding-top: 16px;
 }
 .morelink {
   padding: 0;
@@ -54,6 +73,9 @@ code {
 }
 .profile {
   padding: 1px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 .navbar h5 {
   display: inline-block;

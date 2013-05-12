@@ -31,6 +31,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/projects', routes.projects);
+app.get('/projects/thelastwebsite', routes.thelastwebsite);
 app.get('*', routes.index);
 
 
