@@ -6,9 +6,13 @@ body
   padding-top 4em
   padding-bottom 5em
 
-h1, h2, h3, h4, h5
+h1, h2, h3, h5
   font-family "Source Sans Pro", sans-serif
   color #222
+
+h4
+  font-family "Source Sans Pro", sans-serif
+  color #641e21
 
 h6
   font-family "Ubuntu Mono Regular"
@@ -36,20 +40,40 @@ code
   border-radius: 5px
 
 .project
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  -moz-border-radius 3px
+  -webkit-border-radius 3px
+  border-radius 3px
   background #eeeeee
-  border: 1px solid #bfbfbf;
-  box-shadow: 0 2.5px #bfbfbf;
-  color: #7b7b7b;
-  display: inline-block;
+  border 1px solid #bfbfbf
+  -webkit-box-shadow 0 2px 2px rgba(0,0,0,0.1)
+  -moz-box-shadow 0 2px 2px rgba(0,0,0,0.1)
+  box-shadow 0 2px 2px rgba(0,0,0,0.1)
+  color #7b7b7b
+  display inline-block
   width 225px
   height 250px
   text-decoration none
   margin-top 25px
+
 .projectfull
-  padding-top 25px
+  -moz-border-radius 3px
+  -webkit-border-radius 3px
+  border-radius 3px
+  background #eeeeee
+  border 1px solid #bfbfbf
+  -webkit-box-shadow 0 0 2px rgba(0,0,0,0.1)
+  -moz-box-shadow 0 0 2px rgba(0,0,0,0.1)
+  box-shadow 0 0 2px rgba(0,0,0,0.1)
+  margin-top 25px
+  .cardtop
+    padding 16px
+    background #c1c1c1
+  .cardbottom
+    background #c1c1c1
+    padding 16px
+
+  .projectfullpreview
+    padding 16px
 
 .projectcontentpreview
   padding 10px
@@ -73,10 +97,11 @@ code
   -webkit-border-radius: 3px;
   border-radius: 3px;
 
-.streamdivide
-  padding-top 8px
-  border-bottom solid #bfbfbf
-  border-bottom-width 1px
+.stream
+  margin-bottom 16px
+  .streamdate
+    float right
+
 
 .navbar h5
   display inline-block

@@ -8,10 +8,13 @@ body {
 h1,
 h2,
 h3,
-h4,
 h5 {
   font-family: "Source Sans Pro", sans-serif;
   color: #222;
+}
+h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #641e21;
 }
 h6 {
   font-family: "Ubuntu Mono Regular";
@@ -45,7 +48,9 @@ code {
   border-radius: 3px;
   background: #eee;
   border: 1px solid #bfbfbf;
-  box-shadow: 0 2.5px #bfbfbf;
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
   color: #7b7b7b;
   display: inline-block;
   width: 225px;
@@ -54,7 +59,26 @@ code {
   margin-top: 25px;
 }
 .projectfull {
-  padding-top: 25px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #eee;
+  border: 1px solid #bfbfbf;
+  -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 0 2px rgba(0,0,0,0.1);
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+  margin-top: 25px;
+}
+.projectfull .cardtop {
+  padding: 16px;
+  background: #c1c1c1;
+}
+.projectfull .cardbottom {
+  background: #c1c1c1;
+  padding: 16px;
+}
+.projectfull .projectfullpreview {
+  padding: 16px;
 }
 .projectcontentpreview {
   padding: 10px;
@@ -77,10 +101,11 @@ code {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-.streamdivide {
-  padding-top: 8px;
-  border-bottom: solid #bfbfbf;
-  border-bottom-width: 1px;
+.stream {
+  margin-bottom: 16px;
+}
+.stream .streamdate {
+  float: right;
 }
 .navbar h5 {
   display: inline-block;
