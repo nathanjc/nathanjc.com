@@ -77,6 +77,11 @@ code {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
+.streamdivide {
+  padding-top: 8px;
+  border-bottom: solid #bfbfbf;
+  border-bottom-width: 1px;
+}
 .navbar h5 {
   display: inline-block;
 }
