@@ -193,23 +193,20 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
-	textarea,
-	select {
+	textarea {
 	  	border: 1px solid #bfbfbf;
-	  	color: #7b7b7b;
+	  	color: #222;
 		padding: 6px 4px;
 		outline: none;
 		-moz-border-radius: 2px;
 		-webkit-border-radius: 2px;
 		border-radius: 2px;
 		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: #c1c1c1;
+		color: #222;
 		display: block;
 		margin-bottom: 20px;
 		background: #f2f2f2; }
-	select {
-		padding: 0; }
-	input[type="text"]:focus,
+
 	input[type="password"]:focus,
 	input[type="email"]:focus,
 	textarea:focus {
@@ -225,8 +222,6 @@
 		display: block;
 		font-weight: bold;
 		font-size: 13px;  }
-	select {
-		width: 220px; }
 	input[type="checkbox"] {
 		display: inline; }
 	label span,

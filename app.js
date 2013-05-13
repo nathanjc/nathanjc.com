@@ -24,16 +24,40 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.router);
 
 
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+// login
+
+var user_id = 666;
+
+app.post('/login', function (req, res) {
+  var post = req.body;
+  if (post.user == 'njchapman' && post.password == 'Mindinmind321') {
+    user_id = 777;
+    res.redirect('/admin');
+  } else {
+    res.redirect('/login');
+  }
+});
+
+function checkAuth(req, res, next) {
+  if (user_id !== 777) {
+    res.redirect('/login');
+  } else {
+    next();
+  }
+}
+
 app.get('/', routes.index);
+app.get('/admin', checkAuth, routes.admin);
+app.get('/login', routes.login);
 app.get('/projects', routes.projects);
 app.get('/projects/thelastwebsite', routes.thelastwebsite);
 app.get('*', routes.index);
-
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

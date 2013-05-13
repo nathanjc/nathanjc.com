@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	.projectfull
+		.projectfullpreview
+			h4 Status
+			select(method='post')
+				option(value='online', name='online') Online
+				option(value='offline', name='offline') Offline
+				option(value='underground', name='underground') Underground
+				input(type='submit', name='submit')
