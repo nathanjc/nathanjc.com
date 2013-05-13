@@ -18,7 +18,7 @@ app.set('view engine', 'jade');
 app.locals.pretty = true;
 app.use(express.favicon());
 app.use(express.cookieParser());
-app.use(express.session({secret: '666qwertyuiop'}));
+app.use(express.session({ secret: 'qwertyuiop', cookie: { maxAge: 60000 }}));
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
