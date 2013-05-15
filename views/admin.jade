@@ -4,8 +4,9 @@ block content
 	.projectfull
 		.projectfullpreview
 			h4 Status
-			select(method='post')
-				option(value='online', name='online') Online
-				option(value='offline', name='offline') Offline
-				option(value='underground', name='underground') Underground
-				input(type='submit', name='submit')
+			form(method='post')
+				p.status Online
+				input(type='radio', name='status', value='online', checked)
+				p.status Offline
+				input(type='radio', name='status', value='offline')
+				input(type='submit', name='submit', value='Set Status')
