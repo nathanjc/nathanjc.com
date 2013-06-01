@@ -1,14 +1,14 @@
 body {
-  font-family: "NexaSlab-Regular", sans-serif;
+  font-family: "Nexa", sans-serif;
   padding-top: 4em;
   padding-bottom: 5em;
 }
 h1 {
-  font-family: "NexaSlab-Regular", sans-serif;
-  font-size: 24px;
+  font-family: "NexaBold", sans-serif;
+  font-size: 26px;
 }
 h4 {
-  font-family: "NexaSlab-Regular", sans-serif;
+  font-family: "Nexa", sans-serif;
   color: #a22619;
   font-size: 22px;
 }
@@ -19,16 +19,16 @@ a:hover {
   color: #2f6580;
 }
 td {
-  font-size: 14px;
-  font-family: 'NexaSlab-Regular', serif;
+  font-size: 16px;
+  font-family: 'Nexa', serif;
 }
 p {
-  font-size: 14px;
-  font-family: 'NexaSlab-Regular', serif;
+  font-size: 16px;
+  font-family: 'NexaSlabLight', serif;
 }
 .date {
-  font-family: "NexaSlab-Regular", serif;
-  font-size: 12px;
+  font-family: "NexaSlabLight", serif;
+  font-size: 16px;
   color: #6f6f6f;
   vertical-align: middle;
 }
