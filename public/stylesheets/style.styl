@@ -1,171 +1,134 @@
 
-body 
-  background #f5f5f5 url('/images/noise.png')
-  font-family "Source Sans Pro", sans-serif
-  color #222
+//COMMON STYLES
+
+body
+  font-family "Nexa", sans-serif
   padding-top 4em
   padding-bottom 5em
 
-h1, h2, h3, h5
-  font-family "Source Sans Pro", sans-serif
-  color #222
+h1
+  font-family "Nexa", sans-serif
+  font-size 24px
 
 h4
-  font-family "Source Sans Pro", sans-serif
-  color #641e21
+  font-family "NexaSlab", sans-serif
+  color #a22619
+  font-size 22px
 
-h6
-  font-family "Ubuntu Mono Regular"
-  color #7e8082
-
-p 
-  font-size 1em
-  font-family "Source Sans Pro", sans-serif
-
-ul
-  margin-top 32px
-  font-size 32px
-
-li
-  margin-bottom 16px
-  margin-top 16px
-  font-size 16px
-
-pre 
-  border 1px solid #f5f5f5 
-  background #fff url(/images/noise.png) 
-  font-family "Ubuntu Mono", monospace; margin-bottom: 1em
-
-code 
-  border-radius: 5px
-
-select
-  margin-top 16px
-  margin-bottom 8px
-
-p.status
-  display inline-block
-
-.login
-  float right
-  font-family "Ubuntu MonoB"
-
-.project
-  -moz-border-radius 3px
-  -webkit-border-radius 3px
-  border-radius 3px
-  background #eeeeee
-  border 1px solid #bfbfbf
-  -webkit-box-shadow 0 2px 2px rgba(0,0,0,0.1)
-  -moz-box-shadow 0 2px 2px rgba(0,0,0,0.1)
-  box-shadow 0 2px 2px rgba(0,0,0,0.1)
-  color #7b7b7b
-  display inline-block
-  width 225px
-  height 250px
-  text-decoration none
-  margin-top 25px
-
-.projectfull
-  -moz-border-radius 3px
-  -webkit-border-radius 3px
-  border-radius 3px
-  background #eeeeee
-  border 1px solid #bfbfbf
-  -webkit-box-shadow 0 0 2px rgba(0,0,0,0.1)
-  -moz-box-shadow 0 0 2px rgba(0,0,0,0.1)
-  box-shadow 0 0 2px rgba(0,0,0,0.1)
-  margin-top 25px
-  .cardtop
-    padding 16px
-    background #c1c1c1
-  .cardbottom
-    background #c1c1c1
-    padding 16px
-
-  .projectfullpreview
-    padding 16px
-
-.projectcontentpreview
-  padding 10px
-
-
-.buttonlink
-  text-decoration none
-
-.projectimg
-  padding-top 16px
-
-.morelink
-  padding 0
-  margin 0
-  margin-bottom 16px
-  float right
-
-.profile 
-  padding 1px
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-
-.stream
-  margin-bottom 16px
-  .streamdate
-    float right
-
-
-.navbar h5
-  display inline-block
-
-.navbar a
+a
   color #222
-  margin-right 2em
 
-.project
-  padding-top 16px
+a:hover
+  color #2f6580
 
-@font-face
-  font-family "Source Sans Pro Light"
-  src url(/fonts/SourceSansPro-Light.ttf) 
-  font-weight 300
-@font-face
-  font-family "Source Sans Pro"
-  src url(/fonts/SourceSansPro-Regular.ttf) 
-  font-weight 400
-@font-face
-  font-family "Source Sans Pro"
-  src url(/fonts/SourceSansPro-Bold.ttf) 
-  font-weight 700
-@font-face
-  font-family "Source Sans Pro"
-  src url(/fonts/SourceSansPro-LightItalic.ttf) 
-  font-weight 300 
-  font-style italic
-@font-face
-  font-family "Source Sans Pro"
-  src url(/fonts/SourceSansPro-Italic.ttf) 
-  font-weight 400 
-  font-style italic
-@font-face
-  font-family "Source Sans Pro"
-  src url(/fonts/SourceSansPro-BoldItalic.ttf) 
-  font-weight 700 
-  font-style italic
-@font-face
-  font-family "Ubuntu Mono Regular"
-  src url(/fonts/UbuntuMono-R.ttf) 
-  font-weight 400
-@font-face
-  font-family "Ubuntu Mono"
-  src url(/fonts/UbuntuMono-RI.ttf) 
-  font-weight 400 
-  font-style italic
-@font-face
-  font-family "Ubuntu MonoB"
-  src url(/fonts/UbuntuMono-B.ttf) 
-  font-weight 600
-@font-face
-  font-family "Ubuntu Mono"
-  src url(/fonts/UbuntuMono-BI.ttf) 
-  font-weight 600 
-  font-style italic
+td
+  font-size 14px
+p 
+  font-size 14px
+  font-family 'Nexa', sans-serif
+
+.date
+  font-family "NexaSlab", serif
+  font-size 12px
+  color #6f6f6f
+  vertical-align middle
+
+.italic
+  font-family 'NexaLightItalic', sans-serif
+  font-size 14px
+
+.faded
+  color #6f6f6f
+
+.faded a
+  color #6f6f6f
+
+.faded a:hover
+  color #2f6580
+
+.text_center
+  text-align center
+
+//SIDEBAR
+
+img
+  max-width 150px
+  -moz-border-radius 100%
+  -webkit-border-radius 100%
+  border-radius 100%
+  display block
+  margin auto
+
+//@FONT-FACE
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('/fonts/Nexa_Regular-webfont.eot');
+    src: url('/fonts/Nexa_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Nexa_Regular-webfont.woff') format('woff'),
+         url('/fonts/Nexa_Regular-webfont.ttf') format('truetype'),
+         url('/fonts/Nexa_Regular-webfont.svg#nexa_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NexaItalic';
+    src: url('/fonts/Nexa_Regular_Italic-webfont.eot');
+    src: url('/fonts/Nexa_Regular_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Nexa_Regular_Italic-webfont.woff') format('woff'),
+         url('/fonts/Nexa_Regular_Italic-webfont.ttf') format('truetype'),
+         url('/fonts/Nexa_Regular_Italic-webfont.svg#nexa_regular_italicitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url('/fonts/Nexa_Free_Light-webfont.eot');
+    src: url('/fonts/Nexa_Free_Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Nexa_Free_Light-webfont.woff') format('woff'),
+         url('/fonts/Nexa_Free_Light-webfont.ttf') format('truetype'),
+         url('/fonts/Nexa_Free_Light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url('/fonts/Nexa_Free_Bold-webfont.eot');
+    src: url('/fonts/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Nexa_Free_Bold-webfont.woff') format('woff'),
+         url('/fonts/Nexa_Free_Bold-webfont.ttf') format('truetype'),
+         url('/fonts/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NexaLightItalic';
+    src: url('/fonts/Nexa_Light_Italic-webfont.eot');
+    src: url('/fonts/Nexa_Light_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Nexa_Light_Italic-webfont.woff') format('woff'),
+         url('/fonts/Nexa_Light_Italic-webfont.ttf') format('truetype'),
+         url('/fonts/Nexa_Light_Italic-webfont.svg#nexa_light_italicitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NexaSlab';
+    src: url('/fonts/Nexa_Slab_Light-webfont.eot');
+    src: url('/fonts/Nexa_Slab_Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Nexa_Slab_Light-webfont.woff') format('woff'),
+         url('/fonts/Nexa_Slab_Light-webfont.ttf') format('truetype'),
+         url('/fonts/Nexa_Slab_Light-webfont.svg#nexa_slab_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

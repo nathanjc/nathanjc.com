@@ -4,26 +4,25 @@ html
     title= title
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
     link(rel='shortcut icon', href='/images/profile.jpg')
-    link(rel='stylesheet', href='/stylesheets/base.css')
-    link(rel='stylesheet', href='/stylesheets/skeleton.css')
-    link(href='PATH/TO/holler.css', rel='stylesheet')
     script(type='text/javascript', src='/javascripts/highlight.min.js')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/skeleton.css')
     script(src='/javascripts/hummingbird.js')
 
 body
   script(type='text/javascript') hljs.initHighlightingOnLoad();
-  .container
-    .five.columns.sidebar 
-      include sidebar.jade
-    .ten.columns.offset-by-one
-      .navbar
-        h5
-          a(href='/') Stream
-        h5
-          a(href='/projects') Projects
-        a(href='/admin')
-          h6.login Admin
+  .container.center
+    .three.columns.sidebar
+      img(src="/images/profile.jpg")
+      h1.text_center I'm Nathan Chapman
+      p.italic.text_center Musician & Auralist for 
+        a(href='http://thebrotherschapman.herokuapp.com/') The Brothers Chapman.
+      br
+      p.italic
+        a(href='http://nathanjchapman.bandcamp.com/') Bandcamp
+      p.italic
+        a(href='https://github.com/nathanjc') Github
+    .eight.columns.offset-by-one
       block content
 
   script
