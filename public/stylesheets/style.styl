@@ -2,16 +2,16 @@
 //COMMON STYLES
 
 body
-  font-family "Nexa", sans-serif
+  font-family "NexaSlab-Regular", sans-serif
   padding-top 4em
   padding-bottom 5em
 
 h1
-  font-family "Nexa", sans-serif
+  font-family "NexaSlab-Regular", sans-serif
   font-size 24px
 
 h4
-  font-family "NexaSlab", sans-serif
+  font-family "NexaSlab-Regular", sans-serif
   color #a22619
   font-size 22px
 
@@ -23,22 +23,25 @@ a:hover
 
 td
   font-size 14px
+  font-family 'NexaSlab-Regular', serif
+
 p 
   font-size 14px
-  font-family 'Nexa', sans-serif
+  font-family 'NexaSlab-Regular', serif
 
 .date
-  font-family "NexaSlab", serif
+  font-family "NexaSlab-Regular", serif
   font-size 12px
   color #6f6f6f
   vertical-align middle
 
 .italic
-  font-family 'NexaLightItalic', sans-serif
+  font-family 'NexaSlabLightItalic', sans-serif
   font-size 14px
 
 .faded
   color #6f6f6f
+  font-family 'NexaSlabLightItalic', serif
 
 .faded a
   color #6f6f6f
@@ -61,6 +64,7 @@ img
 
 //@FONT-FACE
 
+//Sans-Serif
 @font-face {
     font-family: 'Nexa';
     src: url('/fonts/Nexa_Regular-webfont.eot');
@@ -86,6 +90,18 @@ img
 }
 
 @font-face {
+    font-family: 'NexaBold';
+    src: url('/fonts/Nexa_Free_Bold-webfont.eot');
+    src: url('/fonts/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Nexa_Free_Bold-webfont.woff') format('woff'),
+         url('/fonts/Nexa_Free_Bold-webfont.ttf') format('truetype'),
+         url('/fonts/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'NexaLight';
     src: url('/fonts/Nexa_Free_Light-webfont.eot');
     src: url('/fonts/Nexa_Free_Light-webfont.eot?#iefix') format('embedded-opentype'),
@@ -97,17 +113,6 @@ img
 
 }
 
-@font-face {
-    font-family: 'NexaBold';
-    src: url('/fonts/Nexa_Free_Bold-webfont.eot');
-    src: url('/fonts/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Nexa_Free_Bold-webfont.woff') format('woff'),
-         url('/fonts/Nexa_Free_Bold-webfont.ttf') format('truetype'),
-         url('/fonts/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 @font-face {
     font-family: 'NexaLightItalic';
@@ -121,8 +126,31 @@ img
 
 }
 
+//Serif
+
 @font-face {
-    font-family: 'NexaSlab';
+  font-family: 'NexaSlab-Regular';
+  src: url('/fonts/273849_10_0.eot');
+  src: url('/fonts/273849_10_0.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/273849_10_0.woff') format('woff'),
+       url('/fonts/273849_10_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+  
+@font-face {
+  font-family: 'NexaSlabRegularItalic';
+  src: url('/fonts/273849_11_0.eot');
+  src: url('/fonts/273849_11_0.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/273849_11_0.woff') format('woff'),
+       url('/fonts/273849_11_0.ttf') format('truetype');
+    font-style: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaSlabLight';
     src: url('/fonts/Nexa_Slab_Light-webfont.eot');
     src: url('/fonts/Nexa_Slab_Light-webfont.eot?#iefix') format('embedded-opentype'),
          url('/fonts/Nexa_Slab_Light-webfont.woff') format('woff'),
@@ -132,3 +160,47 @@ img
     font-style: normal;
 
 }
+
+
+@import url("//hello.myfonts.net/count/273849");
+
+@font-face {
+    font-family: 'NexaSlabRegularItalic';
+    src: url('/fonts/273849_11_0.eot');
+    src: url('/fonts/273849_11_0.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/273849_11_0.woff') format('woff'),
+         url('/fonts/273849_11_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaSlab-Bold';
+    src: url('/fonts/273849_2_0.eot');
+    src: url('/fonts/273849_2_0.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/273849_2_0.woff') format('woff'),
+         url('/fonts/273849_2_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaSlabLightItalic';
+    src: url('/fonts/273849_D_0.eot');
+    src: url('/fonts/273849_D_0.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/273849_D_0.woff') format('woff'),
+         url('/fonts/273849_D_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaSlab-Light';
+    src: url('/fonts/273849_E_0.eot');
+    src: url('/fonts/273849_E_0.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/273849_E_0.woff') format('woff'),
+         url('/fonts/273849_E_0.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
