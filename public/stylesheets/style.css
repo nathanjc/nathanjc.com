@@ -1,6 +1,6 @@
 body {
   font-family: "Nexa", sans-serif;
-  padding-top: 8em;
+  padding-top: 4em;
   padding-bottom: 5em;
 }
 h1 {
@@ -11,6 +11,7 @@ h4 {
   font-family: "Nexa", sans-serif;
   color: #a22619;
   font-size: 22px;
+  margin-top: 0;
 }
 a {
   color: #222;
