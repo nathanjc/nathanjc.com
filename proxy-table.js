@@ -6,7 +6,9 @@ httpProxy.createServer({
     router: {
         'localhost': 'localhost:8080',
         'nathanjc.com': 'localhost:3000',
-        'www.nathanjc.com': 'localhost:3000'
+        'www.nathanjc.com': 'localhost:3000',
+        'geydemaithus.com': 'localhost:6000',
+        'www.geydemaithus.com': 'localhost:6000'
     }
 }).listen(80);
 
