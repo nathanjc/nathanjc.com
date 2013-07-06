@@ -1,7 +1,7 @@
 {
   "name": "Bitters",
   "version": "0.0.2",
-  "private": false,
+  "private": true,
   "scripts": {
     "start": "node app.js"
   },
