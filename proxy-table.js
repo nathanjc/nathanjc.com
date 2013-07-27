@@ -9,6 +9,8 @@ httpProxy.createServer({
         'www.nathanjc.com': 'localhost:3000',
         'mindshare.io': 'localhost:4400',
         'www.mindshare.io': 'localhost:4400',
+        'nodex.io': 'localhost:4500',
+        'www.nodex.io': 'localhost:4500',
         'geydemaithus.com': 'localhost:6000',
         'www.geydemaithus.com': 'localhost:6000'
     }
